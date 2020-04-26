@@ -170,13 +170,14 @@
                     },
                     visualMap: {
                         type: 'continuous',
+                        hoverLink:true,
                         text: ['', ''],
                         showLabel: true,
                         left: '50',
                         min: 0,
                         max: 100,
                         inRange: {
-                            color: ['#edfbfb', '#b7d6f3', '#40a9ed', '#3598c1', '#215096', ]
+                            color: ['#fbe000', '#fbb700', '#f37700', '#ed5000', '#ff0000', ]
                         },
                         splitNumber: 0
                     },
@@ -204,6 +205,12 @@
                             },
                             emphasis: {
                                 show: true
+                            }
+                        },
+                        itemStyle:{
+                            emphasis:{
+                                areaColor:'#17ff0a',
+                                label:{show:true}
                             }
                         },
                         roam: true,
